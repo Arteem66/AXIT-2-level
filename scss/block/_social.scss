@@ -1,0 +1,24 @@
+.social {
+  background-color: #F8EFEF;
+}
+.social__row {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+	padding: 14px 0 18px;
+}
+.social__text {
+  h4{
+    margin-bottom: 30px;
+    text-transform: none;
+  }
+
+  p{
+    color: $form-color;
+    font-size: 18px;
+  }
+}
+.social__icon {
+  display: flex;
+  gap: 30px;
+}

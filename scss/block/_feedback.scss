@@ -1,0 +1,50 @@
+.feedback__inner{
+  padding: 100px 0 50px;
+}
+.feedback__list {
+  display: flex;
+  gap: 30px;
+}
+.feedback__person {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+}
+.feedback__comment {
+  position: relative;
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 65px;
+  width: 370px;
+  height: 180px;
+
+  &::after{
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 70px;
+    width: 30px;
+    height: 20px;
+    background: url(./../../img/feedback/Polygon\ 1.svg);
+  }
+}
+.feedback__text {
+  color: $form-color;
+  font-size: 18px;
+}
+.feedback__info-rerson{
+  display: flex;
+  gap: 30px;
+}
+.feedback__info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.feedback__name {
+}
+.feedback__post {
+}

@@ -1,0 +1,60 @@
+.price__inner {
+  padding: 100px 0 50px;
+}
+
+.price__list {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.price__card {
+  background-color: $lorem-color;
+  width: 370px;
+  text-align: center;
+  transition: all .5s;
+
+  &:hover{
+    transform: translateY(-20px);
+    // filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.20));
+    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.20);
+  }
+}
+.card__link {
+  display: block;
+}
+.card__title {
+  padding: 20px 0;
+  color: #FFF;
+  text-transform: capitalize;
+}
+.card__price {
+  padding: 25px 0;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+}
+.card__text {
+  padding: 20px 0;
+  color: #FFF;
+  opacity: .5;
+  font-size: 18px;
+}
+.advantages__list {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.advantages {
+  border-bottom: 1px solid $form-color;
+  padding: 15px 0;
+  font-size: 18px;
+  color: $form-color;
+  text-transform: capitalize;
+
+  &:last-child{
+    border: none;
+  }
+}

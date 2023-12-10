@@ -1,0 +1,27 @@
+.design{
+	background: url(../img/design/image.jpg) 100% 100%;
+	background-size: cover;
+  position: relative;
+}
+
+.download__inner {
+  padding: 100px 0 80px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: relative;
+}
+
+.design__line{
+  background-color: #fff;
+}
+
+.design__subtitle{
+  color: #fff;
+}
+
+.design__download {
+  width: 370px;
+  margin: 0 auto;
+}

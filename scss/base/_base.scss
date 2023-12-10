@@ -1,0 +1,116 @@
+html,
+body {
+	font-family: $main-font;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: $main-font;
+	font-size: 48px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+h2 {
+	font-family: $main-font;
+	font-size: 36px;
+	font-weight: 400;
+}
+h3 {
+	font-family: $secondary-font;
+	font-size: 30px;
+	font-weight: 700;
+}
+h4 {
+	font-family: $secondary-font;
+	font-size: 24px;
+	font-weight: 700;
+}
+h5 {
+	font-family: $main-font;
+	font-size: 18px;
+	font-weight: 400;
+}
+h6 {
+	font-family: $secondary-font;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.noscroll{
+	overflow-y: hidden;
+}
+
+.header {
+	background-color: #000;
+	color: #fff;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.desription {
+	padding: 100px 0 60px;
+	color: $main-color;
+}
+
+.price {
+	background-color: #f5f5f5;
+}
+
+.footer {
+	background-color: #000;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.download {
+	font-family: $secondary-font;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: 17px 0;
+	transition: all 0.5s;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: #ec7979;
+		border-color: #ec7979;
+	}
+}
+
+.link {
+	transition: all 0.3s;
+
+	&:hover {
+		color: $accent-color;
+	}
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.head__title {
+	font-size: 36px;
+	margin-bottom: 54px;
+	text-transform: uppercase;
+}
+
+.head__line {
+	background-color: $accent-color;
+	margin-bottom: 40px;
+	width: 170px;
+	height: 2px;
+}
+
+.head__subtitle {
+	color: $form-color;
+	font-size: 18px;
+	margin-bottom: 70px;
+}

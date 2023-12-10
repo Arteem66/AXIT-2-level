@@ -1,0 +1,28 @@
+.footer__inner {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.icon {
+}
+.icon__link{
+  display: block;
+
+  & svg path{
+    transition: all .3s;
+  }
+  & svg path:hover{
+    fill: #fff;
+  }
+}
+.footer__cert {
+  color: #fff;
+  opacity: .5;
+  font-size: 18px;
+}
