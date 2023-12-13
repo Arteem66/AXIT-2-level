@@ -46,45 +46,44 @@ function openBurger() {
 	}
 }
 
-
+// ===========TAB=============
+// ===========TAB=============
 
 
 let tabButton = document.querySelectorAll('.descr__button')
 let slides = document.querySelectorAll('.slide__text')
 
-console.log(tabButton);
+let activeButton;
 
-Array.from(tabButton).forEach(b => {
-	b.addEventListener('click', function () {
+tabButton.forEach(item => {
+	item.addEventListener('click', function (button) {
 
-		if (b == tabButton[0]){
-			tabButton.forEach(tabButton => {
-				tabButton.classList.remove('descr__button-active')
-			})
-			tabButton[0].classList.add('descr__button-active')
-			slides.forEach(slide =>{
-				slide.classList.remove('slide__text-active')
-			})
-			slides[0].classList.add('slide__text-active')
-		}else if (b == tabButton[1]) {
-			tabButton.forEach(tabButton => {
-				tabButton.classList.remove('descr__button-active')
-			})
-			tabButton[1].classList.add('descr__button-active')
-			slides.forEach(slide => {
-				slide.classList.remove('slide__text-active')
-			})
-			slides[1].classList.add('slide__text-active')
+		activeButton = Array.from(tabButton).indexOf(button.target)
+
+		if (item == tabButton[0]){
+			removeClass()
+			addClass(activeButton)
+		}else if (item == tabButton[1]) {
+			removeClass()
+			addClass(activeButton)
 		}else{
-			tabButton.forEach(tabButton => {
-				tabButton.classList.remove('descr__button-active')
-			})
-			tabButton[2].classList.add('descr__button-active')
-			slides.forEach(slide => {
-				slide.classList.remove('slide__text-active')
-			})
-			slides[2].classList.add('slide__text-active')
+			removeClass()
+			addClass(activeButton)
 		}
 	})
 })
 
+function removeClass(){
+	tabButton.forEach(tabButton => {
+		tabButton.classList.remove('descr__button-active')
+	})
+
+	slides.forEach(slide => {
+		slide.classList.remove('slide__text-active')
+	})
+}
+
+function addClass(index){
+	tabButton[index].classList.add('descr__button-active')
+	slides[index].classList.add('slide__text-active')
+}
