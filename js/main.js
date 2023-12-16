@@ -28,21 +28,20 @@ window.addEventListener('resize', function () {
 	}
 })
 
-function openBurger() {
+function toggleClass(){
 	wrapper.classList.toggle('hidden')
 	body.classList.toggle('noscroll')
 	inner.classList.toggle('inner__burger')
 	navList.classList.toggle('hidden')
 	navList.classList.toggle('nav__list-burger')
+}
 
+function openBurger() {
+	toggleClass()
 	navList.addEventListener('click', closeBurgerLink)
 
 	function closeBurgerLink() {
-		wrapper.classList.add('hidden')
-		body.classList.remove('noscroll')
-		inner.classList.remove('inner__burger')
-		navList.classList.add('hidden')
-		navList.classList.remove('nav__list-burger')
+		toggleClass()
 	}
 }
 
